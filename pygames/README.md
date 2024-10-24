@@ -1,90 +1,78 @@
----
-
 # Pygames Directory
 
-Welcome to the **Pygames** directory! This section of the repository is dedicated to games developed in Python using the [Pygame](https://www.pygame.org/news) library. Contributors are encouraged to submit their Pygame projects following the structure and guidelines outlined below.
+Welcome to the Pygames directory! This repository is dedicated to showcasing and building games developed in Python using the Pygame library. Contributors are welcome to submit their games by following the installation, contribution, and folder structure guidelines detailed below.
 
-## Folder Structure
+## How to Install Pygame
 
-Please follow this structure when adding your game project:
+To install Pygame, use the following command:
 
-```
+`pip install pygame`
+Ensure you have Python installed on your machine. You can verify the installation of Pygame by running a simple script:
+
+`import pygame`
+`print(pygame.ver)`
+If Pygame is installed correctly, it will display the version number.
+
+## How to Contribute New Games
+
+We encourage the community to contribute their Pygame projects. Follow the steps below to contribute your game:
+
+1. **Fork the Repository:** Start by forking this repository to your GitHub account.
+2. **Create a New Folder:** In your forked repository, create a folder inside /pygames named after your game (e.g., /space_invaders).
+3. **Add Your Files:**
+   Place your main Python script as main.py.
+   If your game includes assets (images, sounds, etc.), organize them inside an /assets folder within your game directory.
+4. **Write a Game README:** Add a README.md file inside your game's folder. This file should include:
+   Game Description: Overview of your game and gameplay mechanics.
+   Installation Instructions: Steps to install necessary dependencies (e.g., pip install pygame).
+   Controls: Describe the controls for playing the game.
+   Screenshots: If possible, add gameplay screenshots and link them inside the README.md file.
+5. **Submit a Pull Request:** Once you're ready, submit a pull request to merge your game into the main repository.
+
+## Folder Structure Guidelines for Submitting Games
+
+When submitting a game, please follow this folder structure for consistency:
+
 /pygames
-    ├── /game_name              # Folder for each game project
-    │     ├── main.py           # Main file to run the game
-    │     ├── /assets           # (Optional) Images, sounds, and other assets
-    │     ├── README.md         # Documentation for the game
-    ├── README.md               # General documentation (this file)
-```
+├── /game_name # Folder for each game project
+│ ├── main.py # Main file to run the game
+│ ├── /assets # (Optional) Images, sounds, and other assets
+│ ├── README.md # Game-specific documentation
+├── README.md # General documentation (this file)
+Example Structure
+For example, if you're contributing a game called "Space Invaders":
 
-### Example Structure
-For example, if you're submitting a game called "Space Invaders":
-```
+bash
+Copy code
 /pygames
-    ├── /space_invaders
-    │     ├── main.py
-    │     ├── /assets
-    │     ├── README.md
-```
+├── /space_invaders
+│ ├── main.py
+│ ├── /assets
+│ ├── README.md
+General Contribution Rules
+Use of Pygame: Ensure that your game is developed using the Pygame library.
+Code Quality: Write clean and modular code. Comment where necessary for clarity.
+Testing: Thoroughly test your game to ensure it runs without errors.
+Naming: Use meaningful names for files and assets to maintain organization.
+Dependencies: If your game has external dependencies, include a requirements.txt file with the required packages.
+Example README for a Game
+Below is an example template for the README.md of a game submission:
 
-## Submission Guidelines
+Game: Space Invaders
+Description
+A simple clone of the classic Space Invaders game, where the player defends Earth from waves of alien invaders.
 
-1. **Folder Creation**: Create a separate folder for your game under the `/pygames` directory. Name the folder after your game (e.g., `/space_invaders`).
-   
-2. **Game File**: Place your game's main Python file as `main.py` inside your game's folder.
-
-3. **Assets**: If your game uses images, sounds, or other assets, include them in an `/assets` folder within your game folder.
-
-4. **README for Each Game**: Add a `README.md` inside your game's folder. This file should include:
-   - **Description**: A brief overview of the game.
-   - **Installation**: Instructions on how to install dependencies and run the game.
-   - **Controls**: Information on the game's controls.
-   - **Screenshots**: Include gameplay screenshots in the `/assets` folder and link them in the README.
-
-5. **Dependencies**: List any required packages in a `requirements.txt` file. Ensure that `pygame` is listed if needed.
-
-## General Contribution Rules
-
-1. **Pygame Usage**: Ensure that your game uses the Pygame library.
-   
-2. **Code Quality**: Write clean, readable, and modular code. Comment where necessary to explain complex sections.
-
-3. **Testing**: Test your game thoroughly to make sure it runs without errors.
-
-4. **Naming**: Use descriptive names for files and assets to make them easily identifiable.
-
-5. **Commit Messages**: Use meaningful commit messages, detailing the changes or features added.
-
-## Example README for Your Game
-
-Here’s an example template for the `README.md` of your game:
-
-### Game: Space Invaders
-
-#### Description
-This is a simple clone of the classic Space Invaders game, where players defend Earth from waves of alien invaders.
-
-#### Installation
-1. Clone the repository.
-2. Navigate to the `space_invaders` folder.
-3. Install dependencies:
-   ```
-   pip install -r requirements.txt
-   ```
-4. Run the game:
-   ```
-   python main.py
-   ```
-
-#### Controls
-- Arrow Keys: Move spaceship left and right
-- Spacebar: Shoot bullets
-
-#### Screenshot
-![Gameplay Screenshot](./assets/space_invaders_screenshot.png)
-
----
-
-Thank you for your contributions! Following these guidelines ensures consistency and makes it easy for others to explore and enjoy the Pygame projects in this directory.
-
----
+Installation
+Clone the repository.
+Navigate to the space_invaders folder.
+Install dependencies:
+bash
+Copy code
+pip install -r requirements.txt
+Run the game:
+bash
+Copy code
+python main.py
+Controls
+Arrow Keys: Move spaceship left and right.
+Spacebar: Shoot bullets.
